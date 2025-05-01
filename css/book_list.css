@@ -1,0 +1,265 @@
+/* === Global Styles === */
+body {
+    font-family: Arial, Helvetica, sans-serif; /* Clean and readable font stack */
+    background-color: #111; /* Dark background for modern look */
+    color: #f2f2f2; /* Light text for contrast on dark background */
+    margin: 0; /* Remove default body margin */
+    padding: 0; /* Remove default body padding */
+    line-height: 1.6; /* Improve text readability */
+}
+
+/* === Header Section === */
+.main-header {
+    padding: 20px 30px; /* Space around header content */
+    display: flex; /* Flexbox for horizontal layout */
+    justify-content: space-between; /* Pushes logo left and search bar right */
+    align-items: center; /* Vertically center items */
+}
+
+/* === Logo Container === */
+.logo-container {
+    display: flex;
+    align-items: center; /* Align image and text vertically */
+}
+
+.logo-container img {
+    width: 30px; /* Set logo size */
+    height: 30px;
+    margin-right: 15px; /* Space between logo and text */
+    border-radius: 5px; /* Slightly rounded corners for logo */
+}
+
+#logo-name {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700; /* Bold text for logo name */
+    font-size: 18pt; /* Prominent logo name */
+    margin: 0;
+}
+
+/* === Navigation Styles === */
+.main-nav {
+    flex-grow: 1; /* Take up remaining space */
+    display: flex;
+    justify-content: center; /* Center nav items horizontally */
+}
+
+.nav-list {
+    list-style: none; /* Remove default list styling */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Display nav items in a row */
+}
+
+.nav-item {
+    margin: 0 20px; /* Spacing between each nav item */
+}
+
+.nav-item:first-child {
+    margin-left: 180px; /* Add space before first item (custom alignment) */
+}
+
+.nav-link {
+    text-decoration: none; /* Remove underlines from links */
+    color: grey; /* Default link color */
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 1.1em;
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.nav-link:hover {
+    color: #fff; /* Highlight link on hover */
+}
+
+/* === Search Bar Styles === */
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-container input[type="text"] {
+    padding: 8px 12px; /* Space inside text input */
+    border: none;
+    border-radius: 8px 0 0 8px; /* Round only the left side */
+    background-color: #333; /* Dark input background */
+    color: #f2f2f2;
+    font-size: 1em;
+}
+
+.search-container button[type="submit"] {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 0 8px 8px 0; /* Round only the right side */
+    background-color: #555; /* Button color */
+    color: #f2f2f2;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-container button[type="submit"]:hover {
+    background-color: #777; /* Button color on hover */
+}
+
+/* === Main Content Area === */
+main {
+    padding: 20px; /* Padding around main content */
+}
+
+/* === Book List Container === */
+.book-list-container {
+    margin: 20px auto; /* Center the container */
+    padding: 20px;
+    background-color: grey; /* Light grey box */
+    border-radius: 8px; /* Rounded edges */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    width: 80%; /* Responsive width */
+}
+
+.book-list-container p {
+    font-size: 1.5em;
+    color: black; /* Override default white for contrast */
+    margin-bottom: 15px;
+    text-align: center; /* Centered heading */
+}
+
+/* === Book List Grid === */
+.book-list {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+    grid-gap: 20px; /* Gap between grid items */
+}
+
+.book-item {
+    background-color: #222; /* Dark card background */
+    color: #f2f2f2;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column; /* Stack child elements vertically */
+    justify-content: space-between;
+    align-items: center;
+}
+
+.book-info {
+    margin-bottom: 10px; /* Space below info before actions */
+}
+
+.book-title {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+    color: #eee; /* Slightly lighter for visibility */
+}
+
+.book-author, .book-genre {
+    color: #aaa; /* Dimmed text */
+    font-size: 0.9em;
+    margin-bottom: 3px;
+}
+
+/* === Action Buttons === */
+.book-actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.book-actions a {
+    display: inline-block;
+    padding: 8px 12px;
+    margin-left: 10px;
+    text-decoration: none;
+    color: #f2f2f2;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Individual Buttons */
+.details-btn,
+.edit-btn,
+.delete-btn {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+/* Button Colors */
+.details-btn {
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
+
+.edit-btn {
+    background-color: #008CBA; /* Blue */
+    color: white;
+}
+
+.delete-btn {
+    background-color: #f44336; /* Red */
+    color: white;
+}
+
+/* Hover Effects for Buttons */
+.details-btn:hover,
+.edit-btn:hover,
+.delete-btn:hover {
+    opacity: 0.8; /* Slight transparency on hover */
+}
+
+/* === Filter Section === */
+.filter-container {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: black; /* Match overall theme */
+    border-radius: 4px;
+}
+
+.filter-form {
+    display: flex;
+    flex-wrap: wrap; /* Wrap filters on small screens */
+    align-items: center;
+}
+
+.filter-form label {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-size: 0.9em;
+    color: white;
+}
+
+.filter-form select,
+.filter-form input,
+.filter-form button {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 0.9em;
+}
+
+.filter-form button {
+    background-color: #444;
+    color: white;
+    cursor: pointer;
+}
+
+.filter-form button:hover {
+    background-color: #555; /* Slight color change on hover */
+}
+
+/* === Footer Section === */
+footer {
+    color: #aaa;
+    text-align: center;
+    padding: 15px 0;
+    position: fixed; /* Sticks to bottom of screen */
+    bottom: 0;
+    width: 100%;
+    opacity: 40%; /* Faded footer */
+}

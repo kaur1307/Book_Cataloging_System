@@ -1,0 +1,138 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #111; /* Darker background */
+    color: #f2f2f2; /* Lighter text */
+    margin: 0; /* Remove default body margin */
+    padding: 0; /* Remove default body padding */
+    line-height: 1.6;
+}
+
+/* css/homepage.css */
+
+.homepage-main {
+    background-image: url('../images/bookshelf.jpg'); /* Replace with your image file name */
+    background-size: cover; /* Adjust as needed */
+    background-position: center; /* Adjust as needed */
+    color: white; /* Adjust text color */
+    text-align: center; /* Center the content */
+    padding: 100px 20px; /* Add padding for spacing */
+    /* Ensure main takes up available vertical space if needed */
+    /* flex-grow: 1; display: flex; flex-direction: column; justify-content: center; */
+}
+
+.main-content {
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: Semi-transparent background */
+    padding: 20px;
+    border-radius: 10px; /* Optional: Rounded corners */
+}
+
+.main-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.main-content h2 {
+    font-size: 1.5em;
+}
+.main-header {
+    padding: 20px 30px; /* More horizontal padding */
+    display: flex;
+    justify-content: space-between; /* Space out logo/nav and search */
+    align-items: center; /* Vertically align items */
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container img {
+    width: 30px; /* Slightly larger logo */
+    height: 30px;
+    margin-right: 15px;
+    border-radius: 5px; /* Optional: slightly rounded logo */
+}
+
+#logo-name {
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 700; /* Bold logo text */
+    font-size: 18pt; /* Larger logo text */
+    margin: 0;
+}
+
+.main-nav {
+    flex-grow: 1; /* Allow navigation to take up available space */
+    display: flex;
+    justify-content: center; /* Center the navigation items */
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Arrange navigation items horizontally */
+}
+
+.nav-item {
+    margin: 0 20px; /* Add horizontal margin for spacing */
+}
+
+.nav-item:first-child {
+    margin-left:180px; /* No margin for the first item */
+}
+
+.nav-link {
+    text-decoration: none;
+    color: grey; /* Light grey navigation links */
+    font-family: Arial, Helvetica, sans-serif; /* Modern, clean font for links */
+    font-weight: 400;
+    font-size: 1.1em;
+    transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+.nav-link:hover {
+    color: #fff; /* White on hover */
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-container input[type="text"] {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 8px 0 0 8px;
+    background-color: #333;
+    color: #f2f2f2;
+    font-size: 1em;
+}
+
+.search-container button[type="submit"] {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 0 8px 8px 0;
+    background-color: #555;
+    color: #f2f2f2;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-container button[type="submit"]:hover {
+    background-color: #777;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    color: #aaa;
+    text-align: center;
+    padding: 15px 0;
+    position: fixed; /* Stick to the bottom */
+    bottom: 0;
+    width: 100%;
+    opacity: 40%;
+}
